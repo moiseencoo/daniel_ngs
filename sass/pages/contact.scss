@@ -1,0 +1,143 @@
+.contact_main-form {
+    background: $blueAccentTextColor;
+    margin-top: -100px;
+    padding-bottom: 100px;
+    
+    
+    .header-title {
+        margin-top: 235px;
+        margin-left: 0;
+        
+        &:nth-child(2) {
+            margin-top: 40px;
+        }
+    }
+}
+
+.direct-contact {
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+    color: inherit;
+    padding-bottom: 40px;
+    
+    .direct-contact_info {
+        display: inline-block;
+        margin-right: 70px;
+        margin-top: 10px;
+        
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    
+    span {
+        display: block;
+        font-family: 'DINBold';
+        font-size: 0.875rem;
+    }
+    
+    a {
+        line-height: 47px;
+        font-size: 1.625rem;
+        color: inherit;
+        
+        &:hover {
+            color: inherit;
+        }
+    }
+}
+
+.contact-form {
+    
+    font-size: 1rem;
+    color: inherit;
+    font-family: "DINBold";
+    
+    span {
+        display: block;
+        font-family: 'DINBold';
+        font-size: 0.875rem;
+    }
+    
+    p {
+        line-height: 47px;
+        font-size: 2.375rem;
+        color: inherit;
+    }
+    
+    input {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: none;
+        outline: none;
+    }
+    
+    ::-webkit-input-placeholder { 
+      font-size: 1rem;
+        color: #1c2228;
+        font-family: "DINBold";
+        text-transform: uppercase;
+    }
+    ::-moz-placeholder { 
+      font-size: 1rem;
+        color: #1c2228;
+        font-family: "DINBold";
+        text-transform: uppercase;
+    }
+    :-ms-input-placeholder {
+       font-size: 1rem;
+        color: #1c2228;
+        font-family: "DINBold";
+        text-transform: uppercase;
+    }
+    :-moz-placeholder { 
+       font-size: 1rem;
+        color: #1c2228;
+        font-family: "DINBold";
+        text-transform: uppercase;
+    }
+    
+}
+
+.budget {
+    cursor: pointer;    
+    position: relative;
+    
+    input {
+        display: none;
+    }
+    
+    .box {
+        display: block;
+        position: absolute;
+        top: 27px;
+        left: 15px;
+        width: 30px;
+        height: 30px;
+        background: white;
+    }
+    
+    .budget-text {
+        display: block;
+        background: white;
+        padding: 15px;
+        margin: 15px 0 0 60px;
+        font-size: 1rem;
+        font-family: "DINBold";
+        width: 100%;
+    }
+    
+    .part-width {
+        max-width: 320px;
+        width: 100%;
+    }
+  
+    
+}
+  
+.part-width-part {
+    display: inline;
+    width: auto;
+}
+    

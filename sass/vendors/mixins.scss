@@ -1,0 +1,59 @@
+@mixin text-box ($left, $right) {
+    padding: 25px 30px;
+    max-width: 400px;
+    position: absolute;
+    background: white;
+    bottom: 0;
+    left: $left;
+    right: $right;
+    
+    h2 {
+        text-transform: uppercase;
+    }
+    
+    a {
+        display: inline-block;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: $darkGreyBgColor;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+       
+    }
+    
+}
+
+
+@mixin accent-block ($accent-color) {
+    h2, span {
+        color: $accent-color;
+        font-weight: bold;
+    }
+}
+
+
+@mixin brief-contact-info {
+            padding: 0;
+            padding-left: 90px;
+            margin: 0;
+            font-size: 1rem;
+            line-height: 35px;
+            font-family: 'DINBold';
+            text-transform: uppercase;
+            
+            &:first-child {
+                margin-top: 10px;
+            }
+            
+            &:last-of-type {
+                margin-bottom: 5px;
+            }
+            
+            a , span{
+                display: inline;
+                font-family: 'DinLight';
+                color: white;
+            }
+}
