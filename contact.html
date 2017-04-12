@@ -30,6 +30,23 @@
        <a href="_index.html"><img src="img/logo_dark.png" alt=""></a>
     </div>
     
+    
+    <div  id="navigation">
+          
+           <a href="#" class="close_menu">
+            <img src="img/icons/menu_red.png" alt="">
+            </a>
+
+             <ul>
+                 <li><a href="#">The good Stuff</a></li>
+                 <li><a href="#">Process</a></li>
+                 <li><a href="about.html">about</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+                 <li><a href="#">Blog</a></li>
+             </ul>
+             
+    </div>
+    
  </header>   
    
  <section class="contact_main-form">
@@ -54,7 +71,11 @@
                   
               </div>
               <div class="col-md-5">
-                  <img src="img/contact_tel.png" alt="">
+                
+                 <div class="big-tel-img">                     
+                     <img src="img/contact_tel.png" alt="">
+                 </div>
+                 
               </div>
           </div> <!--/.row-->
           
@@ -72,32 +93,49 @@
                     <input type="text" id="business-name" placeholder="Business Name">
                     <input type="text" id="url" placeholder="Web Address">
                     
-                    <label for="website">
-                        Protect type                        
+                    <h3> Protect type </h3>
+                    <label for="website">                       
                         <input type="text" id="website" placeholder="Brochure/website">
                     </label>
                     
                     
-                    
-                    <label class="budget">
-                        <input type="checkbox" name="budget"> <span class="box"> </span> 
+                    <h3>Do you have a budget in mind?</h3>
+                    <label class="budget" id="haveBudget">
+                        <input type="radio" name="budget"> <span class="box"> </span> 
                         <span class="budget-text  part-width">Yes, my maximum budget is</span>
                     </label>
                      <input type="text" placeholder="£0000" class="part-width-part">
-                    
+                    <div class="clearfix"></div>
                     
                     <label class="budget">
-                        <input type="checkbox" name="budget"> <span class="box"> </span> 
+                        <input type="radio" name="budget"> <span class="box"> </span> 
                         <span class="budget-text">i have no idea how much it will cost</span>
                     </label>
-                    
+                    <div class="clearfix"></div>
                     <label class="budget">
-                        <input type="checkbox" name="budget"> <span class="box"> </span> 
+                        <input type="radio" name="budget"> <span class="box"> </span> 
                         <span class="budget-text">Yes I do, but I don't want to tell</span>
                     </label>
                     
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    
+                    <h3> Brief</h3>
+                    <label>
+                        <textarea class="contact_textarea" name="brief" id="brief" cols="30" rows="10" placeholder="PLEASE GIVE AS MUCH INFORMATION ABOUT YOUR PROJECT AS POSSIBLE"></textarea>
+                    </label>
+                    
+                    <label class="attach-file">
+                        <input type="file">
+                        <span>Attach a file</span>
+                    </label>
+                    
+                    <input type="tel" placeholder="Enter phone number">
+                    
+                    <input type="submit" value="Send Quote request">
+                    
+                    
+                </div>
            </div>
             
             

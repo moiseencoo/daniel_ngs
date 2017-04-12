@@ -1,7 +1,7 @@
 .contact_main-form {
     background: $blueAccentTextColor;
+    padding-bottom: 220px;
     margin-top: -100px;
-    padding-bottom: 100px;
     
     
     .header-title {
@@ -18,7 +18,7 @@
     border-bottom: 1px solid black;
     text-transform: uppercase;
     color: inherit;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     
     .direct-contact_info {
         display: inline-block;
@@ -47,30 +47,64 @@
     }
 }
 
+.big-tel-img {
+    position: relative;
+    
+    img {
+        position: absolute;
+        right: -50px;
+    }
+}
+
 .contact-form {
     
     font-size: 1rem;
     color: inherit;
     font-family: "DINBold";
+    margin-top: 10px;
+    
+    h3 {
+        margin: 10px;
+        font-size: 1rem;
+    }
     
     span {
         display: block;
         font-family: 'DINBold';
         font-size: 0.875rem;
+        line-height: 10px;
     }
     
     p {
         line-height: 47px;
         font-size: 2.375rem;
+        font-family: 'DinLight';
         color: inherit;
+        margin-left: 15px;
+        margin-bottom: 25px;
     }
     
     input {
         width: 100%;
-        padding: 15px;
+        padding: 10px;
         margin-bottom: 15px;
-        border: none;
+        border: 1px solid transparent;
         outline: none;
+        
+        &:focus {
+            border: 1px solid lighten($darkGreyBgColor, 30%);
+        }
+    }
+    
+    input[type="submit"]{
+        background: #22c919;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        
+        &:hover {
+            background: darken(#22c919, 5%);
+        }
     }
     
     ::-webkit-input-placeholder { 
@@ -106,13 +140,16 @@
     
     input {
         display: none;
+        
+        &:checked + .box {
+            background: #fff url('../img/icons/check.png') no-repeat center 20%;
+        }
     }
     
     .box {
         display: block;
-        position: absolute;
-        top: 27px;
-        left: 15px;
+        float: left;
+        margin-top: 25px;
         width: 30px;
         height: 30px;
         background: white;
@@ -125,19 +162,61 @@
         margin: 15px 0 0 60px;
         font-size: 1rem;
         font-family: "DINBold";
-        width: 100%;
+        width: 85%;
+        width: calc(100% - 60px);
+    }    
+    
+}
+
+.contact_textarea {
+    
+    width: 100%;
+    height: 312px;
+    padding: 15px;
+    
+    &:focus {
+        border: 1px solid lighten($darkGreyBgColor, 30%);
+        outline: none;
     }
+    
+}
+
+.attach-file {
+    width: 100%;   
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+    
+    input {
+        display: none;
+    }
+    
+    span {
+        background: #ff9c00;
+        padding: 15px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        
+        &:hover {
+            background: darken(#ff9c00, 5%);
+        }
+    }
+    
+}
+
+#haveBudget {
+    display: inline-block;
+    margin-top: -30px;
     
     .part-width {
-        max-width: 320px;
-        width: 100%;
+        width: 380px;
     }
-  
-    
 }
   
 .part-width-part {
     display: inline;
-    width: auto;
+    max-width: 100px;
+    margin-left: 10px;
+    margin-bottom: 0 !important;
 }
     

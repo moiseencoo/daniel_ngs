@@ -1,3 +1,56 @@
+@mixin hover-effect ($bg, $color, $hbg, $hcolor) {
+     a {
+        display: inline-block;
+        color: $color;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: $bg;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        position: relative;
+        z-index: 1;  
+        
+        &:hover {
+            color: $hcolor;
+        }
+        
+        
+        &:after {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            background: $hbg;
+            content: '';
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 0;
+        }
+        
+        &:before {
+          background: $hbg;
+          content: '';
+          position: absolute;
+          z-index: -1;
+        }       
+           
+            
+        &:hover:after {
+            width: 100%;
+        }
+       
+    }
+}
+
 @mixin text-box ($left, $right) {
     padding: 25px 30px;
     max-width: 400px;
@@ -6,14 +59,24 @@
     bottom: 0;
     left: $left;
     right: $right;
+    z-index: 5;
     
     h2 {
-        text-transform: uppercase;
+        font-size: 1.75rem;
+        
     }
     
-    a {
+    p {
+        text-transform: none;
+        font-size: 0.875rem;
+        font-family: 'DINBold';
+        line-height: 20px;
+    }
+    
+  /*  a {
         display: inline-block;
         color: white;
+        font-size: 1.125rem;
         text-transform: uppercase;
         text-decoration: none;
         background: $darkGreyBgColor;
@@ -21,8 +84,10 @@
         margin-top: 30px;
         margin-bottom: 5px;
        
-    }
+    }*/
     
+    @include hover-effect ($darkGreyBgColor, white, $blueAccentTextColor, white);  
+   
 }
 
 

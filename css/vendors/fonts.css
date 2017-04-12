@@ -26,3 +26,70 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'aparaj';
+  src: url("../../fonts/aparaj.eot");
+  src: url("../../fonts/aparaj.eot") format("embedded-opentype"), url("../../fonts/aparaj.woff2") format("woff2"), url("../../fonts/aparaj.woff") format("woff"), url("../../fonts/aparaj.ttf") format("truetype"), url("../../fonts/aparaj.svg#aparaj") format("svg");
+}
+.fb, .gg, .in, .mail, .pn,
+.tw, .menu, .menu-white, .menu-red {
+  display: inline-block;
+  background: url("../img/sprite.png") no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+}
+
+.fb {
+  background-position: -5px -0px;
+  width: 43px;
+  height: 42px;
+}
+
+.gg {
+  background-position: -5px -47px;
+  width: 43px;
+  height: 42px;
+}
+
+.in {
+  background-position: -5px -94px;
+  width: 43px;
+  height: 42px;
+}
+
+.mail {
+  background-position: -5px -141px;
+  width: 43px;
+  height: 42px;
+}
+
+.pn {
+  background-position: -5px -188px;
+  width: 43px;
+  height: 42px;
+}
+
+.tw {
+  background-position: -5px -235px;
+  width: 43px;
+  height: 42px;
+}
+
+.menu {
+  background-position: -5px -282px;
+  width: 35px;
+  height: 25px;
+}
+
+.menu-white {
+  background-position: -5px -312px;
+  width: 35px;
+  height: 25px;
+}
+
+.menu-red {
+  background-position: -5px -342px;
+  width: 25px;
+  height: 35px;
+}

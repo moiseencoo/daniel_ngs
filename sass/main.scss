@@ -78,13 +78,14 @@ header {
 }
 
 #navigation {
-        background: rgba(255, 255, 255, .9);
+        background: rgba(255, 255, 255, .95);
         height: 100vh;
         max-width: 350px;
         width: 100%;
         position: fixed;
         transition: all 0.4s;
         left: -350px;
+        z-index: 100;
        
         &:hover {
             background: white;
@@ -224,6 +225,7 @@ header {
     
     .col-2 {
         flex: 1;
+        min-height: 550px;
     }
     
     .map {
@@ -288,6 +290,28 @@ footer{
     }
 }
 
+.share {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    
+    span {
+        color: white;
+        font-family: 'DINBold';
+        margin-right: 13px;
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    a {
+        i {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
 #yellow-block {
     @include accent-block($yellowAccentTextColor);
 }
@@ -302,7 +326,7 @@ footer{
 
 
 
-#home_content-section_1 {
+#rewarding-work_section {
     background: url(../img/section_bg1.jpg) no-repeat center center;
     background-size: cover;
     
@@ -312,7 +336,7 @@ footer{
     
 }
 
-#home_content-section_2 {
+#biggest-challenge_section {
         background: url(../img/section_bg2.jpg) no-repeat center center;
         background-size: cover;
 
@@ -321,12 +345,21 @@ footer{
         }
 }
 
-#home_content-section_3 {
-        background: $lightGreyBgColor url(../img/section_bg3.jpg) no-repeat;
-        background-position: 75% center;
+#treat-your-skin_section {
+        background: url(../img/section_bg4.jpg) no-repeat 45% center;
+        background-size: cover;
 
         .text-box  {
             @include text-box(0, auto);
+        }
+}
+
+#creating-brands_section {
+        background: $lightGreyBgColor url(../img/v_showcase.png) no-repeat;
+        background-position: 25% center;
+
+        .text-box  {
+            @include text-box(auto, 0);
         }
 }
 

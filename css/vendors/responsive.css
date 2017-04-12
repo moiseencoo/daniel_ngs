@@ -2,11 +2,6 @@
   .more-info_blocks .more-info_block {
     padding: 70px 45px;
   }
-}
-@media screen and (max-width: 991px) {
-  html {
-    font-size: 14px !important;
-  }
 
   .grid .item {
     width: 50%;
@@ -15,8 +10,22 @@
     width: 100%;
   }
 
+  #haveBudget .part-width {
+    max-width: 380px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 14px !important;
+  }
+
   .more-info_blocks .more-info_block {
     padding: 50px 35px;
+  }
+
+  .contact_main-form {
+    padding-bottom: 90px;
   }
 
   .contact_section {
@@ -25,6 +34,16 @@
 
   .contact_info {
     padding: 70px 0 0 70px;
+  }
+
+  #haveBudget .part-width {
+    max-width: none;
+    width: auto;
+    min-width: 545px;
+  }
+
+  .big-tel-img img {
+    opacity: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -48,6 +67,34 @@
     margin-left: 60px;
   }
 
+  .services_section {
+    padding: 40px 0 60px;
+  }
+  .services_section p {
+    margin-bottom: 0;
+  }
+  .services_section .services-list-item {
+    width: 48%;
+  }
+  .services_section .services-list-item:nth-child(3), .services_section .services-list-item:nth-child(4) {
+    margin-top: 40px;
+  }
+
+  .direct-contact {
+    padding-bottom: 40px;
+    border: none;
+  }
+  .direct-contact .direct-contact_info {
+    margin-right: 25px;
+  }
+
+  .big-tel-img img {
+    position: relative;
+    opacity: 1;
+    right: auto;
+    width: 85%;
+  }
+
   .more-info_blocks {
     flex-direction: column;
   }
@@ -60,5 +107,72 @@
 
   .contact_info {
     padding: 30px 0 0 30px;
+  }
+
+  .contact_section .col-2 {
+    min-height: 400px;
+  }
+
+  footer .footer-link {
+    left: 15px;
+  }
+
+  #haveBudget .part-width {
+    max-width: none;
+    width: auto;
+    min-width: auto;
+  }
+
+  .header-title {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .contact_main-form {
+    padding-bottom: 60px;
+  }
+  .contact_main-form .header-title {
+    margin-top: 155px;
+  }
+
+  header .header-logo {
+    min-width: auto;
+    max-width: 150px;
+    padding: 20px 25px 0 0;
+  }
+  header .header-logo img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .services_section .services-list-item {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 10px;
+  }
+
+  .text-box {
+    background: rgba(255, 255, 255, 0.86) !important;
+  }
+
+  .grid .item {
+    width: 100%;
+    min-height: auto;
+  }
+  .grid .item img {
+    width: 100%;
+    min-width: auto;
+  }
+  .grid .item p {
+    padding: 60px 40px;
+  }
+  .grid .item a {
+    margin-left: 40px;
+    margin-bottom: 60px;
+  }
+
+  .contact_section .col-2 {
+    min-height: 300px;
   }
 }
