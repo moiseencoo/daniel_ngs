@@ -6,8 +6,7 @@
 @import 'pages/about.scss';
 @import 'pages/contact.scss';
 @import 'pages/good-stuff.scss';
-@import 'pages/project1.scss';
-@import 'pages/project2.scss';
+@import 'pages/projects.scss';
 
 html {
     font-size: 16px;
@@ -75,6 +74,13 @@ header {
         color: $headerTextColor;
         margin-bottom: 0;
         margin-top: 20px;
+    
+    span {
+        display: block;
+        color: $redAccentTextColor;
+        font-size: 0.875rem;
+        font-family: 'DINBold';
+    }
 }
 
 #navigation {
@@ -124,6 +130,10 @@ header {
     color: $blueAccentTextColor;
 }
 
+.red-text {
+    color: $redAccentTextColor;
+}
+
 .wrapper {
     overflow: hidden;
 }
@@ -142,12 +152,13 @@ header {
 .more-info_blocks {      
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     
     .more-info_block {
+        flex: 1;
         background: $darkGreyBgColor;
         border-right: 2px solid white;
         padding: 100px 75px;
-        width: 33.33%;
         min-height: 550px;
         color: white;
         
@@ -158,28 +169,38 @@ header {
     }
     
    .more-info_links {
-        display: inline-block;
+       
+       @include hover-effect (#fff, #000, $blueAccentTextColor, white);  
         background: white;
         padding: 20px;
         margin-top: 30px;
         margin-bottom: 5px;
-        color: black;
-        
-        &:hover,
-        &:focus {
-            color: black;
-        }
     }
     
     p {
         line-height: 25px;
     }
     
-    .brief-contact-info {
-        @include brief-contact-info;
-        padding-left: 0;
-    }
+   
     
+}
+
+.brief-contact-info {
+    @include brief-contact-info;
+    padding-left: 0;
+
+
+    p { 
+        a {
+            background: transparent;
+
+            &:hover,
+            &:before,
+            &:after{
+                background: transparent;
+            }
+        }
+    }
 }
 
 .services_section {
@@ -225,7 +246,6 @@ header {
     
     .col-2 {
         flex: 1;
-        min-height: 550px;
     }
     
     .map {
@@ -258,7 +278,7 @@ header {
         font-family: 'DINBold';
         
         a {
-            font-family: 'DinLight';
+            font-family: 'DINLight';
         }
     }
 }
@@ -314,6 +334,10 @@ footer{
 
 #yellow-block {
     @include accent-block($yellowAccentTextColor);
+    
+    a {        
+      @include hover-effect (white, black, $yellowAccentTextColor, white);
+    }
 }
 
 #blue-block {

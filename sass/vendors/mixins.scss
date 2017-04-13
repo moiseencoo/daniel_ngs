@@ -1,5 +1,4 @@
 @mixin hover-effect ($bg, $color, $hbg, $hcolor) {
-     a {
         display: inline-block;
         color: $color;
         font-size: 1.125rem;
@@ -47,8 +46,6 @@
         &:hover:after {
             width: 100%;
         }
-       
-    }
 }
 
 @mixin text-box ($left, $right) {
@@ -85,8 +82,9 @@
         margin-bottom: 5px;
        
     }*/
-    
-    @include hover-effect ($darkGreyBgColor, white, $blueAccentTextColor, white);  
+    a{        
+     @include hover-effect ($darkGreyBgColor, white, $blueAccentTextColor, white);
+    }  
    
 }
 

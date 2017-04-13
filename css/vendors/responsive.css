@@ -29,7 +29,7 @@
   }
 
   .contact_section {
-    flex-direction: column;
+    display: block;
   }
 
   .contact_info {
@@ -45,6 +45,27 @@
   .big-tel-img img {
     opacity: 0;
   }
+
+  .project-text-container {
+    width: 90%;
+  }
+
+  .img-full-width img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  .links p {
+    display: block;
+    width: 60%;
+  }
+
+  .services-list-item {
+    padding-left: 25px;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
@@ -54,6 +75,7 @@
   .grid .item {
     width: 100%;
     min-height: 400px;
+    height: auto;
     flex-direction: column;
   }
   .grid .item img {
@@ -71,7 +93,7 @@
     padding: 40px 0 60px;
   }
   .services_section p {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
   .services_section .services-list-item {
     width: 48%;
@@ -109,8 +131,11 @@
     padding: 30px 0 0 30px;
   }
 
+  .contact_section {
+    display: block;
+  }
   .contact_section .col-2 {
-    min-height: 400px;
+    width: 100%;
   }
 
   footer .footer-link {
@@ -143,8 +168,51 @@
   header .header-logo img {
     width: 100%;
   }
+
+  .project-text-container {
+    width: 80%;
+  }
+
+  .flex2 {
+    display: block;
+    margin: 0;
+  }
+  .flex2 .col-1 {
+    width: 100%;
+  }
+
+  .two-img {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .left img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .right img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .color-blocks li {
+    min-height: 150px;
+    width: 50%;
+    margin-top: -5px;
+  }
+  .color-blocks li:nth-child(odd) {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 450px) {
+  .services_section p {
+    margin-bottom: 0;
+  }
   .services_section .services-list-item {
     width: 100%;
     margin-top: 40px;
@@ -171,8 +239,25 @@
     margin-left: 40px;
     margin-bottom: 60px;
   }
+  .grid .item .brief-contact-info {
+    padding-left: 40px;
+  }
 
-  .contact_section .col-2 {
-    min-height: 300px;
+  .project-text-container {
+    width: 300px;
+  }
+
+  .color-blocks .color4 {
+    background: #dd7803;
+  }
+
+  .share span {
+    display: block;
+  }
+
+  .part-width-part {
+    margin-left: 60px;
+    margin-top: 15px;
+    max-width: 194px;
   }
 }
