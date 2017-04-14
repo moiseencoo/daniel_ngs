@@ -1,17 +1,32 @@
+@media screen and (max-width: 1490px) {
+    
+    .grid {
+        .item {
+            p {
+                padding: 70px;
+            }
+            
+        }
+    }
+    
+}
+
 @media screen and (max-width: 1190px) {
      .more-info_blocks {
         .more-info_block {
-            padding: 70px 45px;
+            padding: 60px 40px;
         }
     }
     
     .grid {
         .item {
             
-            width: 50%;
+            float: none;
+            
+            width:50%;
             &:last-child {
                 width: 100%;
-            }
+            }      
         }
     }
     
@@ -23,6 +38,21 @@
             width: auto;
         }
     }
+    
+    
+    .contact_section {
+        
+        .map {
+            overflow: hidden;
+            
+            img{
+                width: auto;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    
     
  
     
@@ -37,13 +67,18 @@
     }
     
     
-    .more-info_blocks {
+    .more-info_blocks {        
+        
         .more-info_block {
-            padding: 50px 35px;
+            border-bottom: 2px solid white;
+            text-align: center;
+            width: 100%;
+            min-height: auto;
+            display: block;
         }
     }
-     .contact_main-form
-    {
+    
+     .contact_main-form  {
         padding-bottom: 90px; 
     }
     
@@ -78,24 +113,33 @@
     }
     
     .img-full-width {
-    img {
-        width: 100%;
-       display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
+        img {
+            width: 100%;
+           display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
     }
-}
-    
+
     .links {
         p {
             display: block;
-            width: 60%;
+            width: 100%;
         }
     }
     
     .services-list-item  {
         padding-left: 25px;
+    }
+    
+    .grid {
+        .item { 
+            p {
+                padding: 50px 80px 0;
+            }
+            
+        }
     }
        
     
@@ -113,22 +157,20 @@
     .grid {
         .item {
             width: 100%;
-            min-height: 400px;
-            height: auto;
-            flex-direction: column;           
+            min-height: 450px;
+            height: auto;        
             
-            
-            img {
-                width: 100%;
-                min-width: auto;
-            }
             
             p {
-               padding: 90px 60px 0 60px; 
+               padding: 70px 60px 0; 
             }
             
             a {
                 margin-left: 60px;
+            }
+            
+            .brief-contact-info{
+                padding-left: 60px;
             }
             
            
@@ -171,19 +213,12 @@
             position: relative;
             opacity: 1;
             right: auto;
-            width: 85%;
+            display: block;
+            margin: 0 auto;
         }
     }
     
-      .more-info_blocks {
-        flex-direction: column;
-          .more-info_block {
-              width: 100%;
-              min-height: auto;
-              margin-bottom: 1px;
-              text-align: center;
-          }
-    }
+
     
      .contact_info {
         padding: 30px 0 0 30px;
@@ -193,6 +228,7 @@
         display: block;
         .col-2 {
            width: 100%;
+        display: block;
         }
     }
     
@@ -290,6 +326,11 @@
 }
 
 @media screen and (max-width: 450px){
+    
+    #rewarding-work_section {
+        background-position: 64% center;
+
+    }
     .services_section{
         
         p {
@@ -307,37 +348,12 @@
         background: rgba(255, 255, 255, .86) !important;
     }
     
-     .grid {
-        .item {
-            width: 100%;
-            min-height: auto; 
-            
-            
-            img {
-                width: 100%;
-                min-width: auto;
-            }
-            
-            p {
-               padding: 60px 40px; 
-            }
-            
-            a {
-                margin-left: 40px;
-                margin-bottom: 60px;
-                
-            }
-            
-            .brief-contact-info {
-                padding-left: 40px;
-                
-            }
-        }
-    }
     
      .project-text-container {
         
         width: 300px;
+         padding-left: 15px;
+         padding-right: 15px;
     }
     
     .color-blocks {
@@ -346,6 +362,50 @@
             }
     
     }
+    
+    .grid {         
+        
+        .item {            
+            display:table;
+            width:100%;
+            min-height: 400px;
+            
+            .centered-text {
+                    display:table-cell;
+                    vertical-align:middle;
+
+                    p {
+                       padding:  0 50px; 
+                       text-align: center;
+                        img {
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: auto;
+                            height: auto;
+                        }
+                    }
+
+                    a {
+                        margin-left: 0x;
+                        text-align: center;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 30%;
+                    }
+
+                    .brief-contact-info{
+                        padding-left: 0;
+                        text-align: center; 
+                        a {
+                            display: inline;
+                        }
+                    }
+
+                }
+        }
+    }
+    
     
 
     
@@ -360,8 +420,70 @@
         margin-top: 15px; 
         max-width: 194px;
     }
+    
+     .big-tel-img {
+        
+        img {            
+             width: 90%;
+             height: 90%;
+         }
+    }
+    
        
       
 }
 
 
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px){
+    
+    
+     .grid {
+         
+        
+        .item {
+            
+            display:table;
+            width:100%;
+            min-height: 450px;
+            
+            .centered-text {
+                    display:table-cell;
+                    vertical-align:middle;
+
+                    p {
+                       padding:  0 50px; 
+                       text-align: center;
+                        img {
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: auto;
+                            height: auto;
+                        }
+                    }
+
+                    a {
+                        margin-left: 0x;
+                        text-align: center;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 30%;
+                    }
+
+                    .brief-contact-info{
+                        padding-left: 0;
+                        text-align: center; 
+                        a {
+                            display: inline;
+                        }
+                    }
+
+                }
+        }
+    }
+    
+
+}

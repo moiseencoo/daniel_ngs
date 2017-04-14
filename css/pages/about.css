@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$headerColor".
-        on line 13 of D:/Daniel/Daniel_in_progress/sass/pages/about.scss
+        on line 14 of D:/Daniel/Daniel_in_progress/sass/pages/about.scss
 
-8:         min-height: 560px;
 9:         height: 560px;
-10:         display: inline-block;
-11:         margin-left: -5px;
-12:         text-transform: uppercase;
-13:         border: 2px solid $headerColor;
-14:         box-sizing: border-box;
-15:         overflow: hidden;
-16:         
-17:         img {
-18:             min-width: 100%;
+10:         display: block;
+11:         float: left;
+12:         background: white;
+13:         text-transform: uppercase;
+14:         border: 2px solid $headerColor;
+15:         box-sizing: border-box;
+16:         overflow: hidden;
+17:         
+18:         
+19:         p {
 
 Backtrace:
-D:/Daniel/Daniel_in_progress/sass/pages/about.scss:13
+D:/Daniel/Daniel_in_progress/sass/pages/about.scss:14
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
@@ -79,4 +79,4 @@ C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$headerColor\".\A         on line 13 of D:/Daniel/Daniel_in_progress/sass/pages/about.scss\A \A 8:         min-height: 560px;\A 9:         height: 560px;\A 10:         display: inline-block;\A 11:         margin-left: -5px;\A 12:         text-transform: uppercase;\A 13:         border: 2px solid $headerColor;\A 14:         box-sizing: border-box;\A 15:         overflow: hidden;\A 16:         \A 17:         img {\A 18:             min-width: 100%;"; }
+  content: "Error: Undefined variable: \"$headerColor\".\A         on line 14 of D:/Daniel/Daniel_in_progress/sass/pages/about.scss\A \A 9:         height: 560px;\A 10:         display: block;\A 11:         float: left;\A 12:         background: white;\A 13:         text-transform: uppercase;\A 14:         border: 2px solid $headerColor;\A 15:         box-sizing: border-box;\A 16:         overflow: hidden;\A 17:         \A 18:         \A 19:         p {"; }

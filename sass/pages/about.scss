@@ -2,22 +2,19 @@
 .grid {
     background: white;
     margin-top: 20px;
+    font-size: 0;
     
     .item {
-        width: 33.33%; 
-        min-height: 560px;
+        width: 33.3333%;
         height: 560px;
-        display: inline-block;
-        margin-left: -5px;
+        display: block;
+        float: left;
+        background: white;
         text-transform: uppercase;
         border: 2px solid $headerColor;
         box-sizing: border-box;
         overflow: hidden;
         
-        img {
-            min-width: 100%;
-            width: auto;
-        }
         
         p {
             
@@ -117,5 +114,31 @@
     height: 138px;
 }
 
+#about_grid_1 {
+    background: url('../img/content/content1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+#about_grid_2 {
+    background: url('../img/content/content2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#about_grid_3 {
+    background: url('../img/content/content3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+#about_grid_4 {
+    background: url('../img/content/content4.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#about_grid_5 {
+    background: url('../img/content/content5.jpg') no-repeat center center;
+    background-size: cover;
+}
 
 

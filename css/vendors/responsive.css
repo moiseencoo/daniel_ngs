@@ -1,9 +1,15 @@
+@media screen and (max-width: 1490px) {
+  .grid .item p {
+    padding: 70px;
+  }
+}
 @media screen and (max-width: 1190px) {
   .more-info_blocks .more-info_block {
-    padding: 70px 45px;
+    padding: 60px 40px;
   }
 
   .grid .item {
+    float: none;
     width: 50%;
   }
   .grid .item:last-child {
@@ -14,6 +20,15 @@
     max-width: 380px;
     width: auto;
   }
+
+  .contact_section .map {
+    overflow: hidden;
+  }
+  .contact_section .map img {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 991px) {
   html {
@@ -21,7 +36,11 @@
   }
 
   .more-info_blocks .more-info_block {
-    padding: 50px 35px;
+    border-bottom: 2px solid white;
+    text-align: center;
+    width: 100%;
+    min-height: auto;
+    display: block;
   }
 
   .contact_main-form {
@@ -60,11 +79,15 @@
 
   .links p {
     display: block;
-    width: 60%;
+    width: 100%;
   }
 
   .services-list-item {
     padding-left: 25px;
+  }
+
+  .grid .item p {
+    padding: 50px 80px 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -74,19 +97,17 @@
 
   .grid .item {
     width: 100%;
-    min-height: 400px;
+    min-height: 450px;
     height: auto;
-    flex-direction: column;
-  }
-  .grid .item img {
-    width: 100%;
-    min-width: auto;
   }
   .grid .item p {
-    padding: 90px 60px 0 60px;
+    padding: 70px 60px 0;
   }
   .grid .item a {
     margin-left: 60px;
+  }
+  .grid .item .brief-contact-info {
+    padding-left: 60px;
   }
 
   .services_section {
@@ -114,17 +135,8 @@
     position: relative;
     opacity: 1;
     right: auto;
-    width: 85%;
-  }
-
-  .more-info_blocks {
-    flex-direction: column;
-  }
-  .more-info_blocks .more-info_block {
-    width: 100%;
-    min-height: auto;
-    margin-bottom: 1px;
-    text-align: center;
+    display: block;
+    margin: 0 auto;
   }
 
   .contact_info {
@@ -136,6 +148,7 @@
   }
   .contact_section .col-2 {
     width: 100%;
+    display: block;
   }
 
   footer .footer-link {
@@ -210,6 +223,10 @@
   }
 }
 @media screen and (max-width: 450px) {
+  #rewarding-work_section {
+    background-position: 64% center;
+  }
+
   .services_section p {
     margin-bottom: 0;
   }
@@ -224,31 +241,49 @@
     background: rgba(255, 255, 255, 0.86) !important;
   }
 
-  .grid .item {
-    width: 100%;
-    min-height: auto;
-  }
-  .grid .item img {
-    width: 100%;
-    min-width: auto;
-  }
-  .grid .item p {
-    padding: 60px 40px;
-  }
-  .grid .item a {
-    margin-left: 40px;
-    margin-bottom: 60px;
-  }
-  .grid .item .brief-contact-info {
-    padding-left: 40px;
-  }
-
   .project-text-container {
     width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .color-blocks .color4 {
     background: #dd7803;
+  }
+
+  .grid .item {
+    display: table;
+    width: 100%;
+    min-height: 400px;
+  }
+  .grid .item .centered-text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .grid .item .centered-text p {
+    padding: 0 50px;
+    text-align: center;
+  }
+  .grid .item .centered-text p img {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+  }
+  .grid .item .centered-text a {
+    margin-left: 0x;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  .grid .item .centered-text .brief-contact-info {
+    padding-left: 0;
+    text-align: center;
+  }
+  .grid .item .centered-text .brief-contact-info a {
+    display: inline;
   }
 
   .share span {
@@ -259,5 +294,46 @@
     margin-left: 60px;
     margin-top: 15px;
     max-width: 194px;
+  }
+
+  .big-tel-img img {
+    width: 90%;
+    height: 90%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .grid .item {
+    display: table;
+    width: 100%;
+    min-height: 450px;
+  }
+  .grid .item .centered-text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .grid .item .centered-text p {
+    padding: 0 50px;
+    text-align: center;
+  }
+  .grid .item .centered-text p img {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+  }
+  .grid .item .centered-text a {
+    margin-left: 0x;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  .grid .item .centered-text .brief-contact-info {
+    padding-left: 0;
+    text-align: center;
+  }
+  .grid .item .centered-text .brief-contact-info a {
+    display: inline;
   }
 }

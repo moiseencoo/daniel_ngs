@@ -17,7 +17,7 @@ body {
     padding: 0;
     font-family: 'DINLight', arial;  
     color: #1c2228;
-    background: $headerColor;
+    background: $mainBgColor;
     text-transform: uppercase;
     
 }
@@ -123,7 +123,7 @@ header {
 
 
 .white-text {
-    color: white;
+    color: white !important;
 }
 
 .blue-text {
@@ -150,17 +150,16 @@ header {
 
 
 .more-info_blocks {      
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    
+    display: table;
     .more-info_block {
-        flex: 1;
         background: $darkGreyBgColor;
         border-right: 2px solid white;
         padding: 100px 75px;
         min-height: 550px;
         color: white;
+        width: 33.33%;
+        display: table-cell;
+        margin-left: -5px;
         
         &:last-child {
             border: none;
@@ -233,7 +232,6 @@ header {
 }
 
 .contact_section {
-    display: flex;
     background: $darkGreyBgColor;
     color: white;
     border-bottom: 2px solid $blueAccentTextColor;
@@ -245,7 +243,9 @@ header {
     }
     
     .col-2 {
-        flex: 1;
+        width: 48%;
+        display: inline-block;
+        vertical-align: middle;
     }
     
     .map {
@@ -325,11 +325,30 @@ footer{
     }
     
     a {
+         
+            text-align: center;
+            font-size: 20px;
+
+            .fa {
+                width: 40px;
+                height: 40px;
+                color: white;
+                padding-top: 8px;
+                border: 1px solid transparent;
+            }
+
+            &:hover {
+                .fa {
+                    border: 1px solid #333;
+                }
+            }
+
         i {
             display: inline-block;
             vertical-align: middle;
         }
     }
+
 }
 
 #yellow-block {
