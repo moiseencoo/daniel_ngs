@@ -46,20 +46,11 @@
         font-family: 'DINBold';
         text-transform: uppercase;
         margin-right: 25px;
-        text-align: center;
         
         &:last-child {
             margin-right: 0;
         }
-        
-        .fa {
-            color: inherit;
-            margin-left: 3px;
-            
-            &:hover {
-                color: white;
-            }
-        }
+       
         
         
     }
@@ -69,7 +60,8 @@
              @include hover-effect (white, black, $redAccentTextColor, white);
             display: block;
             margin-top: 15px;
-            font-family: 'DINLight'
+            font-family: 'DINLight';               
+            text-align: center;
         }
     }
 
@@ -78,7 +70,8 @@
              @include hover-effect (white, black, $blueAccentTextColor, white);
               display: block;
             margin-top: 15px;
-            font-family: 'DINLight'
+            font-family: 'DINLight';
+            text-align: center;
         }
     }
 
@@ -87,9 +80,20 @@
              @include hover-effect (white, black, lighten($darkGreyBgColor, 4%), white);
               display: block;
             margin-top: 15px;
-            font-family: 'DINLight'
+            font-family: 'DINLight';
+            text-align: center;
             
         }
+    }
+}
+
+ 
+.fa-angle-right {
+    color: inherit;
+    margin-left: 3px;
+
+    &:hover {
+        color: white;
     }
 }
 
@@ -119,6 +123,26 @@
        float: right;
     }
 }
+
+#margin-left {
+    margin-left: -100px;
+    position: relative;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        background: url('../img/projects/arrow.png') no-repeat;
+        width: 116px;
+        height: 20px;
+        top: 45px;
+        right: -100px;
+    }
+}
+
+#margin-right {
+    margin-left: 100px;
+}
+
 
 .width-auto {
     width: auto !important;

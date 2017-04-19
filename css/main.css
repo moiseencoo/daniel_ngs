@@ -186,8 +186,6 @@
   margin-top: 30px;
   margin-bottom: 5px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
   z-index: 1;
@@ -201,8 +199,6 @@
 }
 .grid .item a:after {
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #5ec7da;
   content: '';
@@ -511,8 +507,6 @@
   margin-top: 30px;
   margin-bottom: 5px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
   z-index: 1;
@@ -522,8 +516,6 @@
 }
 .invenio #creating-brands_section .text-box a:after {
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #5ec7da;
   content: '';
@@ -577,17 +569,9 @@
   font-family: 'DINBold';
   text-transform: uppercase;
   margin-right: 25px;
-  text-align: center;
 }
 .links p:last-child {
   margin-right: 0;
-}
-.links p .fa {
-  color: inherit;
-  margin-left: 3px;
-}
-.links p .fa:hover {
-  color: white;
 }
 .links .red-text a {
   display: inline-block;
@@ -600,22 +584,19 @@
   margin-top: 30px;
   margin-bottom: 5px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
   z-index: 1;
   display: block;
   margin-top: 15px;
-  font-family: "DINLight";
+  font-family: 'DINLight';
+  text-align: center;
 }
 .links .red-text a:hover {
   color: white;
 }
 .links .red-text a:after {
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #fb3437;
   content: '';
@@ -646,22 +627,19 @@
   margin-top: 30px;
   margin-bottom: 5px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
   z-index: 1;
   display: block;
   margin-top: 15px;
-  font-family: "DINLight";
+  font-family: 'DINLight';
+  text-align: center;
 }
 .links .blue-text a:hover {
   color: white;
 }
 .links .blue-text a:after {
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #5ec7da;
   content: '';
@@ -692,22 +670,19 @@
   margin-top: 30px;
   margin-bottom: 5px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
   z-index: 1;
   display: block;
   margin-top: 15px;
-  font-family: "DINLight";
+  font-family: 'DINLight';
+  text-align: center;
 }
 .links .white-text a:hover {
   color: white;
 }
 .links .white-text a:after {
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #262c34;
   content: '';
@@ -726,6 +701,14 @@
 }
 .links .white-text a:hover:after {
   width: 100%;
+}
+
+.fa-angle-right {
+  color: inherit;
+  margin-left: 3px;
+}
+.fa-angle-right:hover {
+  color: white;
 }
 
 .two-img {
@@ -749,6 +732,24 @@
   float: right;
 }
 
+#margin-left {
+  margin-left: -100px;
+  position: relative;
+}
+#margin-left:after {
+  content: '';
+  position: absolute;
+  background: url("../img/projects/arrow.png") no-repeat;
+  width: 116px;
+  height: 20px;
+  top: 45px;
+  right: -100px;
+}
+
+#margin-right {
+  margin-left: 100px;
+}
+
 .width-auto {
   width: auto !important;
 }
@@ -762,10 +763,14 @@
 }
 
 .flex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 50px 0;
 }
 .flex2 .col-1 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 .flex2 .col-1 img {
@@ -791,6 +796,7 @@
 }
 .color-blocks .color2 {
   background: #db5e10;
+  background: -webkit-linear-gradient(#db5e10, #dd7803);
   background: linear-gradient(#db5e10, #dd7803);
   position: relative;
 }
@@ -815,6 +821,7 @@
 }
 .color-blocks .color7 {
   background: #60bccf;
+  background: -webkit-linear-gradient(#60bccf, #35707a);
   background: linear-gradient(#60bccf, #35707a);
 }
 .color-blocks .color8 {
@@ -902,6 +909,7 @@ header .header-menu {
   max-width: 350px;
   width: 100%;
   position: fixed;
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
   left: -350px;
   z-index: 100;
@@ -916,6 +924,7 @@ header .header-menu {
 }
 #navigation li {
   padding: 20px 40px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 #navigation li a {
@@ -977,8 +986,6 @@ header .header-menu {
   margin-top: 30px;
   margin-bottom: 5px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
   z-index: 1;
@@ -992,8 +999,6 @@ header .header-menu {
 }
 .more-info_blocks .more-info_links:after {
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #5ec7da;
   content: '';
@@ -1053,17 +1058,21 @@ header .header-menu {
   text-align: center;
   margin-bottom: 40px;
 }
+.services_section p {
+  font-family: 'DINBold';
+  color: #3e3e3e;
+}
 .services_section .services-list-item {
   width: 24%;
   display: inline-block;
   vertical-align: top;
   color: #fb3437;
-  font-weight: bold;
+  font-family: 'DINBold';
 }
 .services_section .services-sublist li {
   color: #000;
   margin-top: 25px;
-  font-weight: normal;
+  font-family: 'DINLight';
 }
 
 .contact_section {
@@ -1177,8 +1186,6 @@ footer .footer-link .red-accent {
   margin-top: 30px;
   margin-bottom: 5px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
   z-index: 1;
@@ -1188,8 +1195,6 @@ footer .footer-link .red-accent {
 }
 #yellow-block a:after {
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #fd9b02;
   content: '';
@@ -1266,8 +1271,6 @@ footer .footer-link .red-accent {
   margin-top: 30px;
   margin-bottom: 5px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
   z-index: 1;
@@ -1277,8 +1280,6 @@ footer .footer-link .red-accent {
 }
 #rewarding-work_section .text-box a:after {
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #5ec7da;
   content: '';
@@ -1345,8 +1346,6 @@ footer .footer-link .red-accent {
   margin-top: 30px;
   margin-bottom: 5px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
   z-index: 1;
@@ -1356,8 +1355,6 @@ footer .footer-link .red-accent {
 }
 #biggest-challenge_section .text-box a:after {
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #5ec7da;
   content: '';
@@ -1381,6 +1378,7 @@ footer .footer-link .red-accent {
 #treat-your-skin_section {
   background: url(../img/section_bg4.jpg) no-repeat 45% center;
   background-size: cover;
+  position: relative;
 }
 #treat-your-skin_section .text-box {
   padding: 25px 30px;
@@ -1424,8 +1422,6 @@ footer .footer-link .red-accent {
   margin-top: 30px;
   margin-bottom: 5px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
   z-index: 1;
@@ -1435,8 +1431,6 @@ footer .footer-link .red-accent {
 }
 #treat-your-skin_section .text-box a:after {
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #5ec7da;
   content: '';
@@ -1455,6 +1449,15 @@ footer .footer-link .red-accent {
 }
 #treat-your-skin_section .text-box a:hover:after {
   width: 100%;
+}
+#treat-your-skin_section:before {
+  content: '';
+  position: absolute;
+  background: url("../img/refine.png") no-repeat;
+  width: 504px;
+  height: 143px;
+  top: 150px;
+  left: 45%;
 }
 
 #creating-brands_section {
@@ -1503,8 +1506,6 @@ footer .footer-link .red-accent {
   margin-top: 30px;
   margin-bottom: 5px;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   position: relative;
   z-index: 1;
@@ -1514,8 +1515,6 @@ footer .footer-link .red-accent {
 }
 #creating-brands_section .text-box a:after {
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #5ec7da;
   content: '';
@@ -1566,6 +1565,18 @@ footer .footer-link .red-accent {
     width: auto;
     display: block;
     margin: 0 auto;
+  }
+
+  #margin-left {
+    margin-left: 0;
+    position: relative;
+  }
+  #margin-left:after {
+    display: none;
+  }
+
+  #margin-right {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1618,6 +1629,7 @@ footer .footer-link .red-accent {
   .links p {
     display: block;
     width: 100%;
+    text-align: center;
   }
 
   .services-list-item {
@@ -1873,5 +1885,11 @@ footer .footer-link .red-accent {
   }
   .grid .item .centered-text .brief-contact-info a {
     display: inline;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #treat-your-skin_section:before {
+    top: 42px;
+    left: 26%;
   }
 }

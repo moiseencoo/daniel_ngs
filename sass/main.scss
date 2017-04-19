@@ -211,12 +211,17 @@ header {
         margin-bottom: 40px;
     }
     
+    p {
+        font-family: 'DINBold';
+        color: #3e3e3e;
+    }
+    
     .services-list-item {
         width: 24%;
         display: inline-block;
         vertical-align: top;
         color: $redAccentTextColor;
-        font-weight: bold;
+        font-family: 'DINBold';
         
     }
     
@@ -224,7 +229,7 @@ header {
         li {
             color: #000;
             margin-top: 25px;
-            font-weight: normal;
+            font-family: 'DINLight';
         }
     }
     
@@ -391,10 +396,22 @@ footer{
 #treat-your-skin_section {
         background: url(../img/section_bg4.jpg) no-repeat 45% center;
         background-size: cover;
+        position: relative;
 
         .text-box  {
             @include text-box(0, auto);
         }
+    
+    &:before {
+        content: '';
+        position: absolute;
+        background: url('../img/refine.png') no-repeat;
+        width: 504px;
+        height: 143px;
+        top: 150px;
+        left: 45%;
+        
+    }
 }
 
 #creating-brands_section {

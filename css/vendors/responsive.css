@@ -29,6 +29,18 @@
     display: block;
     margin: 0 auto;
   }
+
+  #margin-left {
+    margin-left: 0;
+    position: relative;
+  }
+  #margin-left:after {
+    display: none;
+  }
+
+  #margin-right {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 991px) {
   html {
@@ -80,6 +92,7 @@
   .links p {
     display: block;
     width: 100%;
+    text-align: center;
   }
 
   .services-list-item {
@@ -335,5 +348,11 @@
   }
   .grid .item .centered-text .brief-contact-info a {
     display: inline;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #treat-your-skin_section:before {
+    top: 42px;
+    left: 26%;
   }
 }
