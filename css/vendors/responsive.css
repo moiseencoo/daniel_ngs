@@ -9,7 +9,6 @@
   }
 
   .grid .item {
-    float: none;
     width: 50%;
   }
   .grid .item:last-child {
@@ -40,6 +39,14 @@
 
   #margin-right {
     margin-left: 0;
+  }
+
+  .slider-text {
+    left: 50%;
+  }
+
+  .main-slider__fact {
+    text-align: center;
   }
 }
 @media screen and (max-width: 991px) {
@@ -234,6 +241,25 @@
   .color-blocks li:nth-child(odd) {
     margin-left: 0;
   }
+
+  .slider-text {
+    transform: translateX(-50%);
+    text-align: center;
+    top: 100px;
+    padding: 0 15px;
+  }
+  .slider-text h {
+    margin-bottom: 15px;
+  }
+  .slider-text p {
+    margin-bottom: 10px;
+  }
+
+  .main-slider__fact {
+    bottom: 10px;
+    font-size: 14px;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 450px) {
   #rewarding-work_section {
@@ -284,12 +310,12 @@
     height: auto;
   }
   .grid .item .centered-text a {
-    margin-left: 0x;
+    margin-left: 0px;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 80%;
   }
   .grid .item .centered-text .brief-contact-info {
     padding-left: 0;
@@ -313,6 +339,19 @@
     width: 90%;
     height: 90%;
   }
+
+  .slider-text {
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+  }
+
+  #navigation li {
+    padding: 10px 40px;
+  }
+  #navigation li a {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .grid .item {
@@ -335,7 +374,7 @@
     height: auto;
   }
   .grid .item .centered-text a {
-    margin-left: 0x;
+    margin-left: 0px;
     text-align: center;
     display: block;
     margin-left: auto;
@@ -351,6 +390,19 @@
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .slider-text {
+    transform: translateX(-50%);
+    text-align: center;
+    top: 300px;
+    padding: 0 15px;
+  }
+  .slider-text h {
+    margin-bottom: 15px;
+  }
+  .slider-text p {
+    margin-bottom: 10px;
+  }
+
   #treat-your-skin_section:before {
     top: 42px;
     left: 26%;

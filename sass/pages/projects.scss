@@ -16,6 +16,13 @@
     position: relative;
 }
 
+.bikes-main{
+    background: $headerTextColor;
+    margin-top: -20px;
+    padding: 40px 0;
+    position: relative;
+}
+
 .project-text-container {
     width: 750px;
     margin: 0 auto;    
@@ -34,6 +41,11 @@
         text-transform: none;
         margin-bottom: 50px;
         margin-top: 50px;
+    }
+    
+    a {
+        color: #007bd9;
+        display: block;
     }
     
 }
@@ -169,6 +181,70 @@
             width: 100%;
         }
     }
+}
+
+.gallery-blocks {
+    li {
+        height: 250px;
+        margin: 0;
+        width: 24%;
+        margin-left: -5px;
+        padding: 0;
+        display: inline-block;
+
+        &:nth-child(odd) {
+            width: 26%;
+        }
+        &:nth-child(1),
+        &:nth-child(5) {
+            margin-left: 0;
+        }
+        
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+            margin-top: -5px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.gallery-block__1 {
+    background: url('../img/projects/bikes_6.jpg') no-repeat center center;
+    background-size: cover;
+}
+.gallery-block__2 {
+    background: url('../img/projects/bikes_7.jpg') no-repeat center center;
+    background-size: cover;
+}
+.gallery-block__3 {
+    background: url('../img/projects/bikes_8.jpg') no-repeat center center;
+    background-size: cover;
+}
+.gallery-block__4 {
+    background: url('../img/projects/bikes_9.jpg') no-repeat center center;
+    background-size: cover;
+}
+.gallery-block__5 {
+    background: url('../img/projects/bikes_10.jpg') no-repeat center center;
+    background-size: cover;
+}
+.gallery-block__6 {
+    background: url('../img/projects/bikes_11.jpg') no-repeat center center;
+    background-size: cover;
+}
+.gallery-block__7 {
+    background: url('../img/projects/bikes_12.jpg') no-repeat center center;
+    background-size: cover;
+
+}
+.gallery-block__8 {
+    background: url('../img/projects/bikes_13.jpg') no-repeat center center;
+    background-size: cover;
 }
 
 .color-blocks {

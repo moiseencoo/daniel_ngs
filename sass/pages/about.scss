@@ -11,7 +11,7 @@
         float: left;
         background: white;
         text-transform: uppercase;
-        border: 2px solid $headerColor;
+        border: 1px solid $headerColor;
         box-sizing: border-box;
         overflow: hidden;
         
@@ -117,28 +117,70 @@
 #about_grid_1 {
     background: url('../img/content/content1.jpg') no-repeat center center;
     background-size: cover;
+  
 }
 
 
 #about_grid_2 {
     background: url('../img/content/content2.jpg') no-repeat center center;
     background-size: cover;
+
 }
 
 #about_grid_3 {
     background: url('../img/content/content3.jpg') no-repeat center center;
     background-size: cover;
+    position: relative;
+    
+      
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url('../img/icons/filter.png');
+    }
 }
 
 
 #about_grid_4 {
     background: url('../img/content/content4.jpg') no-repeat center center;
     background-size: cover;
+    position: relative;
+    
+      
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: url('../img/icons/filter.png');
+    }
 }
 
 #about_grid_5 {
-    background: url('../img/content/content5.jpg') no-repeat center center;
+    background: #000;
     background-size: cover;
+    position: relative;
+    
+    h2 {
+        color: #fff;
+        font-size: 1.188rem;
+        text-align: center;
+        padding-top: 60px;
+        margin-bottom: 10px;
+        
+    }
+    
+    iframe {
+        position: absolute;
+        width: 100%;
+        height: 70%;
+    }
 }
 
 

@@ -7,7 +7,7 @@ Error: Undefined variable: "$headerColor".
 11:         float: left;
 12:         background: white;
 13:         text-transform: uppercase;
-14:         border: 2px solid $headerColor;
+14:         border: 1px solid $headerColor;
 15:         box-sizing: border-box;
 16:         overflow: hidden;
 17:         
@@ -79,4 +79,4 @@ C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$headerColor\".\A         on line 14 of D:/Daniel/Daniel_in_progress/sass/pages/about.scss\A \A 9:         height: 560px;\A 10:         display: block;\A 11:         float: left;\A 12:         background: white;\A 13:         text-transform: uppercase;\A 14:         border: 2px solid $headerColor;\A 15:         box-sizing: border-box;\A 16:         overflow: hidden;\A 17:         \A 18:         \A 19:         p {"; }
+  content: "Error: Undefined variable: \"$headerColor\".\A         on line 14 of D:/Daniel/Daniel_in_progress/sass/pages/about.scss\A \A 9:         height: 560px;\A 10:         display: block;\A 11:         float: left;\A 12:         background: white;\A 13:         text-transform: uppercase;\A 14:         border: 1px solid $headerColor;\A 15:         box-sizing: border-box;\A 16:         overflow: hidden;\A 17:         \A 18:         \A 19:         p {"; }

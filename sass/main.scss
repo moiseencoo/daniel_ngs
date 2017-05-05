@@ -1,12 +1,6 @@
+
 @import 'vendors/variables.scss';
 @import 'vendors/fonts.scss';
-@import 'vendors/mixins.scss';
-
-@import 'pages/index.scss';
-@import 'pages/about.scss';
-@import 'pages/contact.scss';
-@import 'pages/good-stuff.scss';
-@import 'pages/projects.scss';
 
 html {
     font-size: 16px;
@@ -44,6 +38,14 @@ ul {
         margin: 0;
     }
 }
+
+@import 'vendors/mixins.scss';
+
+@import 'pages/index.scss';
+@import 'pages/about.scss';
+@import 'pages/contact.scss';
+@import 'pages/good-stuff.scss';
+@import 'pages/projects.scss';
 
 
 header {
@@ -86,7 +88,7 @@ header {
 #navigation {
         background: rgba(255, 255, 255, .95);
         height: 100vh;
-        max-width: 350px;
+        max-width: 300px;
         width: 100%;
         position: fixed;
         transition: all 0.4s;
@@ -106,12 +108,17 @@ header {
     
     
     li {
-        padding: 20px 40px;
+        
+        padding: 13px 40px;
         transition: all 0.3s;
+        
+        &:last-child {
+            padding-bottom: 7px;
+        }
         
         a {
             color: inherit;
-            font-size: 1.655rem;
+            font-size: 1.125rem;
         }
         
         &:hover {
@@ -120,6 +127,26 @@ header {
     }
 }
 
+
+.destract {
+    padding: 0 40px;
+    
+    span {
+        display: block;
+        font-family: 'DinBold';
+        font-size: 12px;
+        margin: 7px 0;
+    }
+    
+    a {
+        color: white;
+        padding: 10px 15px;
+        background: #1c2228;
+        font-size: 12px;
+        font-family: 'DinBold';
+        display: inline-block;
+    }
+}
 
 
 .white-text {
@@ -259,7 +286,12 @@ header {
             width: 100%;
         }
     }
+
     
+}
+
+#map {
+    height: 525px;
 }
 
 .contact_info {
@@ -313,6 +345,9 @@ footer{
             color: #fc3339;
         }
     }
+}
+.red-accent {
+            color: #fc3339;
 }
 
 .share {
@@ -421,6 +456,19 @@ footer{
         .text-box  {
             @include text-box(auto, 0);
         }
+}
+
+#chemical-bikes_section {
+        background: $lightGreyBgColor url(../img/section_bg5.jpg) no-repeat center center;
+        background-size: cover;
+
+        .text-box  {
+            @include text-box( 0, auto);
+        }
+}
+
+.animated {
+    animation-duration: 10s;
 }
 
 @import 'vendors/responsive.scss';

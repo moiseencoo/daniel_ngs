@@ -21,8 +21,6 @@
     .grid {
         .item {
             
-            float: none;
-            
             width:50%;
             &:last-child {
                 width: 100%;
@@ -65,6 +63,14 @@
 
     #margin-right {
         margin-left: 0;
+    }
+    
+    .slider-text {
+        left: 50%;
+    }
+    
+    .main-slider__fact {
+        text-align: center;
     }
 
     
@@ -335,6 +341,26 @@
         }
     }
     
+    .slider-text {
+        transform: translateX(-50%);
+        text-align: center;
+        top: 100px;
+        padding: 0 15px;
+        
+        h {
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    }
+    
+    .main-slider__fact {
+        bottom: 10px;
+        font-size: 14px;
+        width: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 450px){
@@ -398,12 +424,12 @@
                     }
 
                     a {
-                        margin-left: 0x;
+                        margin-left: 0px;
                         text-align: center;
                         display: block;
                         margin-left: auto;
                         margin-right: auto;
-                        width: 30%;
+                        width: 80%;
                     }
 
                     .brief-contact-info{
@@ -441,7 +467,20 @@
          }
     }
     
-       
+    .slider-text {
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 15px;
+    }  
+    
+    #navigation {
+        li {
+            padding: 10px 40px;
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
       
 }
 
@@ -478,7 +517,7 @@ and (max-device-width : 1024px){
                     }
 
                     a {
-                        margin-left: 0x;
+                        margin-left: 0px;
                         text-align: center;
                         display: block;
                         margin-left: auto;
@@ -505,6 +544,22 @@ and (max-device-width : 1024px){
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) { 
+    
+    .slider-text {
+        transform: translateX(-50%);
+        text-align: center;
+        top: 300px;
+        padding: 0 15px;
+        
+        h {
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    }
+    
+    
     
 #treat-your-skin_section {
     

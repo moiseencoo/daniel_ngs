@@ -42,11 +42,19 @@
                  <li><a href="about.html">about</a></li>
                  <li><a href="contact.html">Contact</a></li>
                  <li><a href="#">Blog</a></li>
-             </ul>             
+             </ul>  
+             
+             <div class="destract">
+                     <img src="img/icons/blank-img.jpg" alt="">
+                     <span>Don't let this destract you</span>
+                     <a href="#">But I'm curious</a>
+            </div>           
     </div>       
     
   
 </header>
+ 
+
   
    <h1 class="header-title">
        The good Stuff
@@ -197,8 +205,7 @@
 <section class="contact_section">
         
         <div class="col-2">
-           <div class="map">
-               <img src="img/map-img.jpg" alt="">
+           <div class="map" id="map">
            </div>
         </div>
         <div class="col-2 contact_info">
@@ -230,6 +237,11 @@
         <script src="js/vendor/retina.min.js"></script>
 
         <script src="js/main.js"></script>
+        
+          <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwAdnhL0Xj4DFm8S6OBp55aV3UIv1gAcM&callback=initMap">
+        </script> 
+        
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <!--  <script>
