@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'DINLight', arial;  
+    font-weight: 100;
     color: #1c2228;
     background: $mainBgColor;
     text-transform: uppercase;
@@ -37,6 +38,10 @@ ul {
         padding: 0;
         margin: 0;
     }
+}
+
+h1, h2, h3, h4 {
+    font-weight: 100;
 }
 
 @import 'vendors/mixins.scss';
@@ -72,11 +77,15 @@ header {
 .header-title {
         font-size:  2.188rem;
         font-family: 'DINLight';
+        font-weight: 100;
         margin-left: 90px;
         color: $headerTextColor;
         margin-bottom: 0;
         margin-top: 20px;
     
+    a {
+        color: inherit;
+    }
     span {
         display: block;
         color: $redAccentTextColor;
@@ -94,6 +103,21 @@ header {
         transition: all 0.4s;
         left: -350px;
         z-index: 100;
+        overflow: auto;
+/* 
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+         
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+            border-radius: 10px;
+        }
+         
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+        } */
        
         &:hover {
             background: white;
@@ -257,6 +281,7 @@ header {
             color: #000;
             margin-top: 25px;
             font-family: 'DINLight';
+            font-weight: 100;
         }
     }
     
@@ -292,6 +317,7 @@ header {
 
 #map {
     height: 525px;
+    width: 100%;
 }
 
 .contact_info {
@@ -316,6 +342,7 @@ header {
         
         a {
             font-family: 'DINLight';
+            font-weight: 100;
         }
     }
 }
@@ -389,6 +416,11 @@ footer{
         }
     }
 
+}
+
+.share_bottom {
+    top: auto;
+    bottom: 5px;
 }
 
 #yellow-block {
@@ -467,8 +499,30 @@ footer{
         }
 }
 
-.animated {
-    animation-duration: 10s;
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.jspVerticalBar {
+    width: 5px;
+}
+
+.jspTrack {
+    background-color: #F4F4F4;
+}
+
+.jspDrag {
+    background-color: #C9C9C9;
+    max-height: 100px;
 }
 
 @import 'vendors/responsive.scss';

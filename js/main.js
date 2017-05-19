@@ -4,6 +4,10 @@ $(document).ready(function(){
     
 });
 
+
+ $('#navigation.scroll-pane').jScrollPane();
+
+
  $(".header-menu a").on('click', function(){
         
        $('#navigation').animate({left: '0'}, "0");
@@ -17,18 +21,17 @@ $(document).ready(function(){
          $(".header-menu a").show();
 });
 
-    
-$('#main-slider').owlCarousel({
-      items: 1,
-    loop: true,
-    dots: false,
-    autoplay: true,
-    autoplaySpeed: 10000,
-    autoplayTimeout: 10000,
-    animateIn: 'fadeIn',
-    animateOut: 'fadeOut'
-});
 
+ $('#main-slider').owlCarousel({
+       items: 1,
+     loop: true,
+     dots: false,
+     autoplay: true,
+     autoplaySpeed: 10000,
+     autoplayTimeout: 10000,
+     animateIn: 'fadeIn',
+     animateOut: 'fadeOut'
+ });
 
   function initMap() {
     var uluru = {lat: 52.9225, lng: -1.47663};

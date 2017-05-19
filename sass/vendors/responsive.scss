@@ -8,6 +8,7 @@
             
         }
     }
+
     
 }
 
@@ -132,7 +133,8 @@
     .img-full-width {
         img {
             width: 100%;
-           display: block;
+            height: 100%;
+            display: block;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 30px;
@@ -158,6 +160,24 @@
             }
             
         }
+    }
+
+    .gallery-blocks {
+        li {
+            width: 49.77%;
+
+            &:nth-child(odd) {
+                width: 50.23%;
+            }
+
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8){
+                margin-top: 0;
+            }
+        }
+          
     }
        
     
@@ -298,18 +318,31 @@
     
     .flex2 {
         display: block;
-        margin: 0;
         
         .col-1 {
             width: 100%;
+        }
+    }
+    .bikes_two-img .two-img {
+        width: 100%;
+    }
+
+    .uneven-img {
+        .col-1 {
+            width: 100%;
+            float: none;
+            
+            &:first-child {
+                width: 100%;
+            }
         }
     }
     
     .two-img {
         width: 100%;
         vertical-align: middle;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
 
     }
 
@@ -360,8 +393,18 @@
         font-size: 14px;
         width: 100%;
     }
+
+    
     
 }
+
+@media screen and (max-width: 600px) {
+    .home-page-sections #creating-brands_section {
+        background-size: 80%;
+        background-position: 75% 5%;
+    }
+}
+
 
 @media screen and (max-width: 450px){
     
@@ -471,13 +514,23 @@
         border-radius: 30px;
         background: rgba(0, 0, 0, 0.2);
         padding: 15px;
-    }  
+    } 
     
     #navigation {
         li {
             padding: 10px 40px;
             a{
                 font-size: 1.5rem;
+            }
+        }
+    }
+
+    .gallery-blocks {
+        li {
+            width: 100%;
+
+            &:nth-child(odd) {
+                width: 100%;
             }
         }
     }
@@ -570,3 +623,30 @@ and (orientation : portrait) {
         }
     }
 }
+
+@media only screen and (max-device-width: 568px) 
+    and (min-device-width: 320px) 
+    and (orientation: portrait){
+
+    .slider-text  {
+
+            h2{                
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+        }
+}
+
+@media only screen and (max-device-width: 568px) 
+      and (min-device-width: 320px) 
+      and (orientation: landscape){
+
+        .slider-text  {         
+            top: 30px;
+
+            h2{                
+                line-height: 35px;
+                margin-bottom: 20px;
+            }
+        }
+    }
